@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/azul"
+    tools:context=".LojaActivity">
+
+    <Button
+        android:id="@+id/btnHomemA"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="548dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="6.99€"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnKvsG"
+        android:layout_width="81dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="324dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="6.99€"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/btnSeta2"
+        android:layout_width="69dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/captura_de_ecr__2021_10_21_164623"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="126dp"
+        android:layout_height="183dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/godzilla_vs_kong" />
+
+    <Button
+        android:id="@+id/btnVenom"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="320dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="5.99€"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnAvengers"
+        android:layout_width="81dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="548dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="5.99€"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="126dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="144dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.89"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/venom" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="123dp"
+        android:layout_height="182dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="368dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unnamed" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="115dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:text="Loja"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="108dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="608dp"
+        android:backgroundTint="@color/black"
+        android:text="Proxima"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="129dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="608dp"
+        android:text="1     2"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="104dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="608dp"
+        android:text="_"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="125dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="368dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avengers_endgame_journey_s_end_i73600" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
