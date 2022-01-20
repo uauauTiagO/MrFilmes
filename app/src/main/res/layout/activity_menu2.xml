@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/azul"
+    tools:context=".menuActivity2">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLojaMenu"
+        android:layout_width="193dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="126dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="Loja"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnMaisinformacoes"
+        android:layout_width="193dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="126dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="Mais Informaões"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnPerfilMenu"
+        android:layout_width="189dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="126dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="Perfil"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnSairMenu"
+        android:layout_width="189dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="126dp"
+        android:backgroundTint="@color/design_default_color_on_secondary"
+        android:text="Sair"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/txtnome22"
+        android:layout_width="118dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="276dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

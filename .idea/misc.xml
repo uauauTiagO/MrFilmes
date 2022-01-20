@@ -3,12 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/drawable/ic_icon.xml" value="0.21979166666666666" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_lista.xml" value="0.23550724637681159" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_menu2.xml" value="0.18489583333333334" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_mudar_nome.xml" value="0.2259963768115942" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_mudar_pass.xml" value="0.264" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_perfil.xml" value="0.2" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_recycler_view.xml" value="0.136" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_recycler_view2.xml" value="0.25" />
+        <entry key="..\:/Users/famil/AndroidStudioProjects/filmes/app/src/main/res/menu/menu.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_confirmar_compra.xml" value="0.25" />
-        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_criar_conta.xml" value="0.25" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_criar_conta.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_historico.xml" value="0.21302083333333333" />
         <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_loja.xml" value="0.25" />
         <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_loja22.xml" value="0.25" />
         <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_main2.xml" value="0.176" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_menu.xml" value="0.23505434782608695" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_menu2.xml" value="0.2" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_menu22.xml" value="0.23505434782608695" />
         <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_metodos_depagamento.xml" value="0.25" />
+        <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_mudar_pass.xml" value="0.1693840579710145" />
         <entry key="..\:/Users/tiago/AndroidStudioProjects/filmes/app/src/main/res/layout/activity_perfil.xml" value="0.25" />
       </map>
     </option>

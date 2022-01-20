@@ -6,10 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Loja2Activity2 extends AppCompatActivity {
 Button btnAnterior,btnBlackW,btnVelocidadeF,btnChangC,btnironMan;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +25,10 @@ Button btnAnterior,btnBlackW,btnVelocidadeF,btnChangC,btnironMan;
         btnChangC=findViewById(R.id.btnChangC);
         btnVelocidadeF=findViewById(R.id.btnVelocidadeF);
         btnAnterior=findViewById(R.id.btnAnterior);
+
+
+
+
 
         btnAnterior.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,5 +69,6 @@ Button btnAnterior,btnBlackW,btnVelocidadeF,btnChangC,btnironMan;
                 startActivity(intent2);
             }
         });
+
     }
 }

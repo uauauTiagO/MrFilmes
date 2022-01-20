@@ -1,21 +1,19 @@
 package com.example.filmes;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Criar_ContaActivity extends AppCompatActivity {
 
     Button btnCriar1,btnVoltar;
     EditText txtPass2,txtConfirmarPass,txtNomeUtilizador2;
     String pass,confirmar;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +25,8 @@ public class Criar_ContaActivity extends AppCompatActivity {
         txtConfirmarPass=findViewById(R.id.txtConfirmarPass);
         btnCriar1=findViewById(R.id.btnCriar1);
         btnVoltar=findViewById(R.id.btnVoltar);
+
+        LoginDAO loginDAO = new LoginDAO(this);
 
         btnCriar1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,14 +50,24 @@ public class Criar_ContaActivity extends AppCompatActivity {
                 }
                 else
                 {
-
-                    Intent intent = new Intent(Criar_ContaActivity.this, MainActivity.class);
-                    intent.putExtra("nome", txtNomeUtilizador2.getText().toString());
-                    intent.putExtra("pass", txtPass2.getText().toString());
-                    startActivity(intent);
+                    Boolean resultado = loginDAO.checkutilizador(txtNomeUtilizador2.getText().toString());
+                    if(resultado == true)
+                    {
+                        Toast.makeText(getApplicationContext(), "Este utilizador ja existe", Toast.LENGTH_SHORT).show();
+                    }
+                    else {
+                        loginDAO.criarUser(txtNomeUtilizador2.getText().toString(), txtPass2.getText().toString());
+                        Toast.makeText(getApplicationContext(), "Conta criada com sucesso", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(Criar_ContaActivity.this, MainActivity.class);
+                        intent.putExtra("nome", txtNomeUtilizador2.getText().toString());
+                        intent.putExtra("pass", txtPass2.getText().toString());
+                        startActivity(intent);
+                    }
                 }
             }
         });
+
+
         btnVoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

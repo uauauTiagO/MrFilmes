@@ -2,19 +2,24 @@ package com.example.filmes;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.firebase.firestore.auth.User;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnCriar,btnIniciar,btnSair;
+    Button btnCriar,btnIniciar,btnSair,btnMudar;
     EditText txtNomeUtilizador, txtPass;
     String utilizador, passw;
+
 
 
 
@@ -22,14 +27,24 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-
-        btnSair=findViewById(R.id.btnSair);
-        txtPass=findViewById(R.id.txtPass);
-        txtNomeUtilizador=findViewById(R.id.txtNomeUtilizador);
         btnCriar=findViewById(R.id.btnCriar);
         btnIniciar=findViewById(R.id.btnIniciar);
+        btnSair=findViewById(R.id.btnSair);
+        txtNomeUtilizador=findViewById(R.id.txtNomeUtilizador);
+        txtPass=findViewById(R.id.txtPass);
+        btnMudar=findViewById(R.id.btnMudarPass);
+
+        LoginDAO loginDAO = new LoginDAO(this);
+
+
+
+        btnMudar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,mudarPassActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         btnCriar.setOnClickListener(new View.OnClickListener() {
@@ -43,25 +58,28 @@ public class MainActivity extends AppCompatActivity {
         btnIniciar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String nome,pass;
-                Bundle extra=getIntent().getExtras();
-                nome=extra.getString("nome");
-                pass=extra.getString("pass");
+
+//                String nome,pass;
+                Intent intent = new Intent(MainActivity.this, Criar_ContaActivity.class);
+//                nome=getIntent().getStringExtra("nome");
+//                pass=getIntent().getStringExtra("pass");
+
                 utilizador=txtNomeUtilizador.getText().toString();
                 passw=txtPass.getText().toString();
-                Intent intent = new Intent(MainActivity.this,LojaActivity.class);
-                if(txtNomeUtilizador.getText().toString().equals(""))
+
+
+                if(utilizador.equals(""))
                 {
                     Toast.makeText(getApplicationContext(), "Insira o seu nome de utilizador", Toast.LENGTH_SHORT).show();
                 }
-                else if (txtNomeUtilizador.getText().toString().equals("Admin")&&txtPass.getText().toString().equals("admin123") )
-                {
+
+                else if(loginDAO.verificacaologin(utilizador, passw)) {
+
+                    intent = new Intent(MainActivity.this,menuActivity2.class);
+                    intent.putExtra("nome",txtNomeUtilizador.getText().toString());
                     startActivity(intent);
                 }
-                else if(txtNomeUtilizador.getText().toString().equals(nome) && txtPass.getText().toString().equals(pass))
-                {
-                    startActivity(intent);
-                }
+
                 else
                 {
                     Toast.makeText(getApplicationContext(), "Utilizador errado", Toast.LENGTH_SHORT).show();

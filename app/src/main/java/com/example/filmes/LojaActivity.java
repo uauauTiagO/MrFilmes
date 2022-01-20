@@ -6,13 +6,21 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 
 public class LojaActivity extends AppCompatActivity {
 Button btnProximo,btnKvsG,btnVenom,btnHomemA, btnAvengers;
 ImageButton btnSeta2;
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,6 +33,7 @@ ImageButton btnSeta2;
         btnSeta2=findViewById(R.id.btnSeta2);
         btnProximo=findViewById(R.id.btnProximo);
 
+
         btnProximo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,13 +45,14 @@ ImageButton btnSeta2;
         btnSeta2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LojaActivity.this, MainActivity.class);
+                Intent intent = new Intent(LojaActivity.this, menuActivity2.class);
                 startActivity(intent);
             }
         });
         btnHomemA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 
                 Intent intent2 = new Intent(LojaActivity.this,metodosDepagamento.class);
                 startActivity(intent2);
@@ -72,6 +82,7 @@ ImageButton btnSeta2;
                 startActivity(intent2);
             }
         });
+
 
 
 

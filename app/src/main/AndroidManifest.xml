@@ -10,13 +10,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Filmes">
         <activity
+            android:name=".mudarNomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".listaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".mudarPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".historicoActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".menuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".menuActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".historicoActivity"
+            android:exported="false" />
+        <activity
             android:name=".perfilActivity"
             android:exported="false" />
         <activity
             android:name=".metodosDepagamento"
-            android:exported="true" />
-        <activity
-            android:name=".Confirmar_compra"
             android:exported="true" />
         <activity
             android:name=".Loja2Activity2"
